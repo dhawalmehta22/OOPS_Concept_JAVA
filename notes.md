@@ -53,3 +53,15 @@
 * * can have final methods.
 
 ### interface
+* * We can say its the better version of the abstract class
+  >it enables multiple inheritance and help in acheiving loose copling
+
+## Class--> extends --> Class
+## Class--> implemets --> Interface
+## Class--> extends --> Class
+
+
+### encapsulation
+> nothing but privatising all the variables
+> implemting getters and setters is the key of encapsulation
+> data hidding which is basically security of our data
