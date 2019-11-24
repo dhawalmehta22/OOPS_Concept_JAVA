@@ -22,7 +22,8 @@
 
 > property of one object is aquired by another object
 > is-a replationship
-> 
+> whenever you call the parameterised constructor of sub class it calls the default constructor of super class not he parameterised constructor
+> whenever we inherit any class A to B the super(); is by default persent in the B's constructor 
 > Some advantages
 * code reusablity
 * Extensiblity
@@ -58,7 +59,7 @@
 
 ## Class--> extends --> Class
 ## Class--> implemets --> Interface
-## Class--> extends --> Class
+## Interface--> extends --> Interface
 
 
 ### encapsulation
