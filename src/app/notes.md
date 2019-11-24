@@ -30,9 +30,26 @@
 * Data hidding (Privatising)
 >no multiple inheritance supported --> Multiple parents having same object --> it is opposite of hierarchical inheritance
 
-## polymorphism
+## **polymorphism**
 > having same name with different dwfinations
 > 2 types: -
-* Compile time / Static  --> Over**_loading_** --> Compiler will evaluate that which MEthord will be executed with which funtion call
-* Run time
-  
+* Compile time / Static  --> Over **_loading_** --> Compiler will evaluate that which MEthord will be executed with which funtion call.
+* *  Over **_loading_**
+* * * must have different argument list
+* * * can have different return type
+* Run time / Runtime --> Over **_ridding_** --> 
+* *  Over **_ridding_**
+* * * must have same argument list
+* * * must have same return type
+
+## **Abstraction**
+> Achieving runtime polymorphism
+> Achieved through abstract classes and interfaces 
+### abstract
+> Abstract keyword
+* * we cannot create objects
+* * we can have abstract/non abstract methods
+* * can have static methods and constructors 
+* * can have final methods.
+
+### interface
