@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <title>heading</title>
+        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
+        
+        <style>
+.task-list-item { list-style-type: none; } .task-list-item-checkbox { margin-left: -20px; vertical-align: middle; }
+</style>
+        <style>
+            body {
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', 'Ubuntu', 'Droid Sans', sans-serif;
+                font-size: 14px;
+                line-height: 1.6;
+            }
+        </style>
+        
+        
+    </head>
+    <body class="vscode-light">
+        <h1 id="heading">heading</h1>
+<h2 id="heading-1">heading</h2>
+<blockquote>
+<p>Bottom up approach where we fisrt thing of the task the behaviour and stuff.<br>
+main is executed by JVM from where the program run.
+java has a lot of boiler plate code ==&gt;&gt; non usable code</p>
+</blockquote>
+<pre><code class="language-JAVA"><div>Human abject = <span class="hljs-keyword">new</span> Human();
+<span class="hljs-comment">//refrence of human = object of human</span>
+Himan abject  = <span class="hljs-keyword">new</span> Man();
+<span class="hljs-comment">//refrence of human = object of man</span>
+</div></code></pre>
+<blockquote>
+<p>works on objecs</p>
+</blockquote>
+<blockquote>
+<p>access modifiers:</p>
+<ol>
+<li>Default</li>
+<li>Public</li>
+<li>Private</li>
+<li>Protected</li>
+</ol>
+</blockquote>
+<blockquote>
+<p>more secure
+features like -- overloading, overiding, inheritence</p>
+</blockquote>
+<blockquote>
+<p>4 pillars of OOPS</p>
+</blockquote>
+<ul>
+<li>Encapsulation</li>
+<li>Polymorphism</li>
+<li>abstraction</li>
+<li>Inheritance</li>
+</ul>
+<h2 id="inheritance--generalisation">Inheritance / Generalisation</h2>
+<blockquote>
+<p>property of one object is aquired by another object
+is-a replationship
+whenever you call the parameterised constructor of sub class it calls the default constructor of super class not he parameterised constructor
+whenever we inherit any class A to B the super(); is by default persent in the B's constructor
+Some advantages</p>
+</blockquote>
+<ul>
+<li>code reusablity</li>
+<li>Extensiblity</li>
+<li>Overridding</li>
+<li>Data hidding (Privatising)</li>
+</ul>
+<blockquote>
+<p>no multiple inheritance supported --&gt; Multiple parents having same object --&gt; it is opposite of hierarchical inheritance</p>
+</blockquote>
+<h2 id="polymorphism"><strong>polymorphism</strong></h2>
+<blockquote>
+<p>having same name with different dwfinations
+2 types: -</p>
+</blockquote>
+<ul>
+<li>Compile time / Static  --&gt; Over <strong><em>loading</em></strong> --&gt; Compiler will evaluate that which MEthord will be executed with which funtion call.</li>
+<li>
+<ul>
+<li>Over <strong><em>loading</em></strong></li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>must have different argument list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>can have different return type</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Run time / Runtime --&gt; Over <strong><em>ridding</em></strong> --&gt;</li>
+<li>
+<ul>
+<li>Over <strong><em>ridding</em></strong></li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>must have same argument list</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>
+<ul>
+<li>must have same return type</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="abstraction"><strong>Abstraction</strong></h2>
+<blockquote>
+<p>Achieving runtime polymorphism
+Achieved through abstract classes and interfaces</p>
+</blockquote>
+<h3 id="abstract">abstract</h3>
+<blockquote>
+<p>Abstract keyword
+we can define as well as declare methods.
+if we dont want to create object of any class we declare it abstract.
+if we declare an method abstract it does not have any body --&gt; that means it is only declaration
+if we extend an abstract class we need to define the body of its abstract methods in sub class.</p>
+</blockquote>
+<pre><code class="language-JAVA"><div><span class="hljs-keyword">abstract</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Human</span>
+</span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">abstract</span> <span class="hljs-keyword">void</span> <span class="hljs-title">eat</span><span class="hljs-params">()</span></span>;
+    
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">walk</span><span class="hljs-params">()</span>
+	</span>{
+
+	}
+}
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Man</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Human</span>
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">eat</span><span class="hljs-params">()</span>
+	</span>{
+		
+	}
+}
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AbstractDemo</span> 
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+	</span>{
+		Human obj = <span class="hljs-keyword">new</span> Man();
+	}
+}
+</div></code></pre>
+<ul>
+<li>
+<ul>
+<li>we cannot create objects</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>we can have abstract/non abstract methods</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>can have static methods and constructors</li>
+</ul>
+</li>
+<li>
+<ul>
+<li>can have final methods.</li>
+</ul>
+</li>
+</ul>
+<h3 id="interface">interface</h3>
+<blockquote>
+<p>we can only declare methods.
+We can say its the better version of the abstract class
+it enables multiple inheritance and help in acheiving loose copling
+We can create refrence of interface but we cannot create object of it.
+methods have no bodyin interfaces.
+main function is to achieve multiple inheritance as we can implement many interfaces.
+all the methods in interface are bydefault public abstract.
+in abstract class we can define methods and in interface we cannot==&gt;&gt; main difference.
+<b> In java 1.8 we can define methods </b></p>
+</blockquote>
+<h2 id="class---extends----class">Class--&gt; extends --&gt; Class</h2>
+<h2 id="class---implemets----interface">Class--&gt; implemets --&gt; Interface</h2>
+<h2 id="interface---extends----interface">Interface--&gt; extends --&gt; Interface</h2>
+<blockquote>
+<p>Types: -</p>
+<ul>
+<li>Normal ==&gt;&gt; if an interface has more than one methods.</li>
+<li>Marker ==&gt;&gt; no method.</li>
+<li>Single abstract method ==&gt;&gt; which has only one method. ==&gt;&gt; from java 8 it is called Functional interface ==&gt;&gt; Lamda expression
+lamda came from scala lang. ==&gt;&gt; java acquired scala.</li>
+</ul>
+</blockquote>
+<pre><code class="language-java"><div><span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Ac</span>
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span></span>;
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnonymousInterface</span> 
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+	</span>{
+		Ac obj =() -&gt; System.out.println(<span class="hljs-string">"Im the best"</span>);
+		
+				obj.show();
+	}
+}
+</div></code></pre>
+<h3 id="encapsulation">encapsulation</h3>
+<blockquote>
+<p>nothing but privatising all the variables
+implemting getters and setters is the key of encapsulation
+data hidding which is basically security of our data</p>
+</blockquote>
+<h2 id="wrapper-class">Wrapper class</h2>
+<blockquote>
+<p>Primitive is fast.
+frameworks like hibernate work only with wrapper classes and not primitive datatypes</p>
+</blockquote>
+<pre><code class="language-JAVA"><div><span class="hljs-keyword">int</span> i = <span class="hljs-number">5</span>; <span class="hljs-comment">//primitive datatype  ==&gt;&gt; Simple variable</span>
+Integer ii = <span class="hljs-keyword">new</span> Integer(<span class="hljs-number">5</span>); <span class="hljs-comment">//Wrapper class ==&gt;&gt; Object class</span>
+Integer ii = <span class="hljs-keyword">new</span> Integer(<span class="hljs-number">5</span>); <span class="hljs-comment">//Boxing ==&gt;&gt; Wrapping</span>
+<span class="hljs-keyword">int</span> j = ii.intValue(); <span class="hljs-comment">//Unboxing ==&gt;&gt; Unwrapping</span>
+Integer val = i; <span class="hljs-comment">//AutoBoxing ==&gt;&gt; AutoWrapping</span>
+<span class="hljs-keyword">int</span> k = val; <span class="hljs-comment">//AutoUnboxing</span>
+</div></code></pre>
+<h2 id="final">Final</h2>
+<blockquote>
+<p>final variable value can't be changed.
+it can assign value only once.
+class is declared final if we dont want ot let other classes extend it.
+method ==&gt;&gt; no one can override that method</p>
+</blockquote>
+<h3 id="anonymous-class">Anonymous class</h3>
+<blockquote>
+<p>Main function is to override the show method of class without creating another class.</p>
+</blockquote>
+<pre><code class="language-JAVA"><div><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Ab</span>
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span>
+	</span>{
+		System.out.println(<span class="hljs-string">"in A show"</span>);
+	}
+}
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnonymousExample</span> 
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+	</span>{
+		Ab obj = <span class="hljs-keyword">new</span> Ab()
+				{
+					<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span>
+					</span>{
+						System.out.println(<span class="hljs-string">"im the best"</span>);
+					}
+				};
+				
+		obj.show();
+	}
+}
+
+<span class="hljs-comment">// With interface</span>
+<span class="hljs-comment">//main adv. is it not use lots of memory </span>
+<span class="hljs-class"><span class="hljs-keyword">interface</span> <span class="hljs-title">Ac</span>
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span></span>;
+} 
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnonymousInterface</span> 
+</span>{
+	<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+	</span>{
+		Ac obj = <span class="hljs-keyword">new</span> Ac()
+				{
+					<span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span>
+					</span>{
+						System.out.println(<span class="hljs-string">"Im the best"</span>);
+					}
+				};
+		
+				obj.show();
+	}
+}
+</div></code></pre>
+
+    </body>
+    </html>

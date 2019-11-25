@@ -5,7 +5,7 @@ public class App {
 	   
 		/* 
 		
-		Inheritance in Classes Product, Mobile, Laptop 
+		//Inheritance with Classes --> Product, Mobile, Laptop 
 		
 		Product p1 = new Product();
 		p1.setValues(101,"Mouse", 650);
@@ -20,6 +20,10 @@ public class App {
 
 		// Laptop l1 = new Laptop();
          */
+
+		 //Interface with classes --> 
+
+		 
 
 		 
 
